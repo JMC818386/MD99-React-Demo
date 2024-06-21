@@ -12,16 +12,16 @@ const DataDisplay = () => {
                 let response = await axios.post('https://8000-jmc818386-md99djangodem-vt7jc03x5sf.ws-us114.gitpod.io/api/get/imageurl/', { user_name: 'Betty' });
                 const bettyData = {
                     name: 'Betty',
-                    score: response.data.url.value,  // This assumes 'value' contains the score, adjust if needed
-                    image: response.data.url.url   // This should be the path to the image
+                    score: response.data.url.value,
+                    image: response.data.url.url
                 };
 
                 // Fetching Billy's data
                 response = await axios.post('https://8000-jmc818386-md99djangodem-vt7jc03x5sf.ws-us114.gitpod.io/api/get/imageurl/', { user_name: 'Billy' });
                 const billyData = {
                     name: 'Billy',
-                    score: response.data.url.value,  // This assumes 'value' contains the score, adjust if needed
-                    image: response.data.url.url   // This should be the path to the image
+                    score: response.data.url.value,
+                    image: response.data.url.url
                 };
                 console.log("response:", response)
 
